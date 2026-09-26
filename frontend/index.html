@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yggdrasil · Árvore Binária</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://d3js.org"></script>
+</head>
+<body>
+<header>
+  <div class="runes">ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ ᚷ ᚹ</div>
+  <h1>YGGDRASIL</h1>
+  <p>A Árvore do Mundo · nós em desequilíbrio queimam em vermelho</p>
+</header>
+<div class="wrap">
+  <div class="card stage"><svg id="tree" viewBox="0 0 900 640" role="img" aria-label="Árvore binária estilo Yggdrasil"></svg></div>
+  <aside class="card">
+    <h2>ᚱ INVOCAR NÓ</h2>
+    <div class="row"><input id="val" type="number" placeholder="Valor" aria-label="Valor"><button id="add">INSERIR</button></div>
+    <div class="btns"><button id="del">DELETAR</button><button id="reset">REINICIAR</button></div>
+    <h2>ᚦ LEGENDA</h2>
+    <div class="leg"><span class="dot"></span><span>Equilibrado (|fator| ≤ 1)</span></div>
+    <div class="leg"><span class="dot bad"></span><span>Desbalanceado (|fator| &gt; 1)</span></div>
+    <div id="status"></div>
+  </aside>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
