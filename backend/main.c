@@ -1,10 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
+#include "include/server.h"
 
-
-
-
-
-
-
+int main(void) {
+    initiate_server();
+    return 0;
+}
